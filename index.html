@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ordem de Serviço</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<h1>Ordem de Serviço</h1>
+
+	<form method="POST" action="gerar_pdf.php">
+		<fieldset>
+			<legend>Dados do Cliente</legend>
+			<label for="cliente_nome">Nome:</label>
+			<input type="text" id="cliente_nome" name="cliente_nome"><br>
+
+			<label for="cliente_endereco">Endereço:</label>
+			<input type="text" id="cliente_endereco" name="cliente_endereco"><br>
+
+			<label for="cliente_telefone">Telefone:</label>
+			<input type="text" id="cliente_telefone" name="cliente_telefone"><br>
+
+			<label for="cliente_email">E-mail:</label>
+			<input type="email" id="cliente_email" name="cliente_email"><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Descrição do Serviço Solicitado</legend>
+			<label for="descricao_servico">Descrição:</label><br>
+			<textarea id="descricao_servico" name="descricao_servico"></textarea>
+		</fieldset>
+
+		<fieldset>
+			<legend>Descrição do Problema</legend>
+			<label for="descricao_problema">Descrição:</label><br>
+			<textarea id="descricao_problema" name="descricao_problema"></textarea>
+		</fieldset>
+
+		<fieldset>
+			<legend>Dados do Computador</legend>
+			<label for="computador_marca">Marca:</label>
+			<input type="text" id="computador_marca" name="computador_marca"><br>
+
+			<label for="computador_modelo">Modelo:</label>
+			<input type="text" id="computador_modelo" name="computador_modelo"><br>
+
+			<label for="computador_serial">Serial:</label>
+			<input type="text" id="computador_serial" name="computador_serial"><br>
+
+			<label for="computador_acessorios">Acessórios:</label>
+			<input type="text" id="computador_acessorios" name="computador_acessorios"><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Datas</legend>
+			<label for="data_abertura">Data de Abertura:</label>
+			<input type="date" id="data_abertura" name="data_abertura"><br>
+
+			<label for="data_prevista">Data Prevista para Conclusão:</label>
+			<input type="date" id="data_prevista" name="data_prevista"><br>
+		</fieldset>
+
+		<fieldset>
+
+			<label for="autorizacao">Autorização:</label>
+                        <label for="autorizacao_sim">Sim</label>
+                        <input type="radio" id="autorizacao_sim" name="autorizacao" value="sim">
+                        <label for="autorizacao_nao">Não</label><br>
+                        <input type="radio" id="autorizacao_nao" name="autorizacao" value="não">
+		</fieldset>
+
+		<fieldset>
+			<legend>Termos e Condições</legend>
+			<label for="termos_e_condicoes">
+				<input type="checkbox" id="termos_e_condicoes" name="termos_e_condicoes">
+				<span>Li e aceito os termos e condições.</span>
+			</label>
+		</fieldset>
+
+		<div class="button-wrapper">
+			<button type="submit" class="generate-pdf-btn">Gerar PDF</button>
+		</div>
+	</form>
+
+</body>
+</html>

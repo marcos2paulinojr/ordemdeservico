@@ -1,0 +1,121 @@
+/* Estilos para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para o cabeçalho da página */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos para o título da página */
+h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+/* Estilos para o formulário */
+form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 30px auto;
+  max-width: 700px;
+  padding: 20px;
+}
+
+/* Estilos para os campos de entrada */
+label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+input[type="text"], textarea, input[type="email"] {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Estilos para o botão de envio */
+input[type="submit"], .generate-pdf-btn {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.generate-pdf-btn {
+  background-color: #009688;
+}
+
+/* Estilos para a tabela de informações */
+table {
+  border-collapse: collapse;
+  margin-top: 30px;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Estilos para a assinatura do técnico */
+.signature {
+  margin-top: 20px;
+}
+
+.signature label {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+.signature input[type="text"] {
+  margin-right: 20px;
+  width: 300px;
+}
+
+.signature p {
+  margin-top: 5px;
+}
+
+.label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.generate-pdf-btn:hover {
+  background-color: #00796B;
+}
